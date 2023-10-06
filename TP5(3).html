@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP5 (3)</title>
+</head>
+<body>
+    <h3>Validate by Direct Input</h3>
+
+    <form action="#" method="post">
+        <fieldset>
+             <legend>Validate by Direct Input</legend>
+             <label for="validator">Enter the Markup to Validate</label><br>
+             <textarea name="Markup" id="validator" cols="50" rows="10"></textarea> <br>
+
+             <label for="validate">Validate Full Document</label>
+             <input type="radio" name="val" value="full" id="validate"> <br>
+             
+             <label for="doc">Use Doctype</label>
+             <select name="doctypeSelect" id="doc">
+                <option value="">(detect automatically)</option>
+             </select> <br>
+             
+             <label for="frag">Validate HTML fragment</label>
+             <input type="radio" name="val" id="frag" value="HTML"> <br>
+             
+              Use Doctype:
+             <input type="radio" name="type" value="HTML 4.01" id="4.01">
+             <label for="4.01">HTML 4.01</label>
+             <input type="radio" name="type" value="XHTML1.0" id="1.0">
+             <label for="1.0">XHTML 1.0</label>
+        </fieldset>
+        <fieldset>
+            <legend>Options</legend>
+            <input type="radio" name="messages" id="list" value="list">
+            <label for="list">List Messages Sequentlly</label>
+            <input type="radio" name="messages" id="group" value="group">
+            <label for="group">Group Error Messages by Type</label><br>
+            <input type="checkbox" name="showS" id="source" value="show">
+            <label for="source">Show Source</label>
+            <input type="checkbox" name="cleanH" id="clean" value="clean">
+            <label for="clean">Clean Up Markup with HTML-Tidy</label><br>
+        </fieldset> 
+        <input type="submit" value="Check" name="Check">
+    </form>
+</body>
+</html>
